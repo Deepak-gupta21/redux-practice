@@ -42,3 +42,12 @@ Provides a predictable way to handle state transitions.
 
 Connects React components to the Redux store.
 Provides hooks (useSelector, useDispatch) to access state and dispatch actions without boilerplate.
+
+## useSelector
+Used to read/select state from the Redux store.
+It takes a function (called a selector) as an argument, which extracts a specific part of the state.
+Automatically subscribes the component to updates. If the selected state changes, the component re-renders.
+
+## useDispatch
+Used to dispatch actions to the Redux store.
+It returns the dispatch function, which is used to trigger state changes by sending actions to reducers.
